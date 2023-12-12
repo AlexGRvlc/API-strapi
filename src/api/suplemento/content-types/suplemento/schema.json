@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "suplementos",
+  "info": {
+    "singularName": "suplemento",
+    "pluralName": "suplementos",
+    "displayName": "suplemento",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "descripcion": {
+      "type": "blocks",
+      "required": true
+    },
+    "precio": {
+      "type": "decimal",
+      "required": true
+    },
+    "imagen": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "nombre"
+    },
+    "descripcion2": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
